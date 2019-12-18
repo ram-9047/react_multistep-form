@@ -19,6 +19,8 @@ class Index extends React.Component {
       password: "",
       cardName: "",
       fullName: "",
+      country: "",
+      gender: "",
       description: "",
       paymentMethod: "",
       cardNumber: "",
@@ -47,6 +49,16 @@ class Index extends React.Component {
       fullName: event.target.value
     });
   };
+  handleCountryChange = event => {
+    this.setState({
+      country: event.target.value
+    });
+  };
+  handleGenderChange = event => {
+    this.setState({
+      gender: event.target.value
+    });
+  };
   handleDescription = event => {
     this.setState({
       description: event.target.value
@@ -71,6 +83,9 @@ class Index extends React.Component {
     this.setState({
       expiryDate: event.target.value
     });
+  };
+  alert = () => {
+    alert(this.state.fullName + "registered successfully");
   };
   handlePage = page => {
     this.setState({
@@ -98,6 +113,10 @@ class Index extends React.Component {
             page={this.handlePage}
             fullName={this.state.fullName}
             handleFullNameChange={this.handleFullNameChange}
+            country={this.state.country}
+            handleCountry={this.handleCountryChange}
+            gender={this.state.gender}
+            handleGender={this.handleGenderChange}
             description={this.state.description}
             handleDescription={this.handleDescription}
           />
@@ -115,6 +134,7 @@ class Index extends React.Component {
             handleCardNumberChange={this.handleCardNumberChange}
             expiryDate={this.state.expiryDate}
             handleExpiryDate={this.handleExpiryDate}
+            showAlert={this.alert}
           />
         );
         break;

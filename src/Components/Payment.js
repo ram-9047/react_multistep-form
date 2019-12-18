@@ -83,12 +83,15 @@ export default function payment(props) {
         </form>
       </div>
       <hr className="dotted-line" />
-      <footer>
+      <footer className="footer1">
         <span
           onClick={() => props.page("personal_information")}
           className="prev-btn"
         >
           previous
+        </span>
+        <span onClick={props.showAlert} className="prev-btn">
+          submit
         </span>
       </footer>
     </>

@@ -50,7 +50,11 @@ export default function personalInfo(props) {
             <div className="country">
               <span>Country</span>
               <select className="input-box">
-                <option selected value="Select Country">
+                <option
+                  selected
+                  value="Select Country"
+                  onClick={props.handleCountry}
+                >
                   Select Country
                 </option>
                 <option value="India">India</option>
@@ -63,7 +67,11 @@ export default function personalInfo(props) {
             <span className="flex gender">
               <p>Gender:</p>
               <th className="btn">
-                <button className="male-btn">
+                <button
+                  className="male-btn"
+                  value="male"
+                  onClick={props.handleGender}
+                >
                   <img
                     src="images/man.png"
                     alt="man-icon"
@@ -71,7 +79,11 @@ export default function personalInfo(props) {
                   ></img>{" "}
                   Male
                 </button>
-                <button className="female-btn">
+                <button
+                  className="female-btn"
+                  value="female"
+                  onClick={props.handleGender}
+                >
                   <img
                     src="images/woman.png"
                     alt="man-icon"
