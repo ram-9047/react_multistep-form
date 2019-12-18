@@ -1,0 +1,59 @@
+html {
+  font-family: "Lato", sans-serif;
+}
+body {
+  max-width: 600px;
+  margin-left: 24rem;
+}
+.add-user {
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+}
+.flex {
+  display: flex;
+}
+.dotted-line {
+  border-top: 1px dotted gray;
+}
+.details {
+  margin-left: 1rem;
+}
+.details-list {
+  margin-top: 20px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  border-radius: 75%;
+  text-align: center;
+  margin-right: 10px;
+}
+.form {
+  margin-left: 3rem;
+}
+.input-box {
+  height: 25px;
+  width: 200px;
+  border: 0.5px solid gray;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.email-box {
+  margin-left: 32px;
+}
+.password-box {
+  margin-left: 5px;
+}
+.avatar-box {
+  margin-left: -20px;
+}
+.next-btn {
+  border: 1px solid black;
+  padding: 8px 12px;
+  font-size: 12.5px;
+  color: white;
+  background-color: #0672e1;
+  border-radius: 2px;
+  margin-left: 30rem;
+  text-transform: uppercase;
+}
