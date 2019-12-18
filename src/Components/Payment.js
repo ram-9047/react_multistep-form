@@ -33,12 +33,41 @@ export default function payment(props) {
             Name on the Card
             <input
               type="text"
-              //   value={props.nameValue.name}
-              //   onChange={props.handleNameChange.handleNameChange}
+              value={props.cardName}
+              onChange={props.handleCardNameChange}
               className="input-box"
             />
           </label>
           <br />
+          <label>
+            Payment Method
+            <input
+              type="text"
+              value={props.payment}
+              onChange={props.handlePaymentChange}
+              className="input-box"
+            />
+          </label>
+          <br />
+          <label>
+            Card Number
+            <input
+              type="number"
+              value={props.cardNumber}
+              onChange={props.handleCardNumberChange}
+              className="input-box"
+            />
+          </label>
+          <br />
+          <label>
+            Expiry Date
+            <input
+              type="date"
+              value={props.expiryDate}
+              onChange={props.handleExpiryDate}
+              className="input-box"
+            />
+          </label>
         </form>
       </div>
       <hr className="dotted-line" />
@@ -49,12 +78,6 @@ export default function payment(props) {
         >
           previous
         </span>
-        {/* <button
-          className="next-btn"
-          //   onClick={() => props.handlePage("payment-details")}
-        >
-          Next Step
-        </button> */}
       </footer>
     </>
   );

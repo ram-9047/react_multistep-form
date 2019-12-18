@@ -35,8 +35,8 @@ export default function personalInfo(props) {
               Full-Name:
               <input
                 type="text"
-                // value={this.state.fullName}
-                // onChange={this.handleChange}
+                value={props.fullName}
+                onChange={props.handleFullNameChange}
                 className="input-box"
               />
             </label>
@@ -78,7 +78,12 @@ export default function personalInfo(props) {
             <br />
             <label className="flex description">
               About You:
-              <textarea rows="6" cols="40">
+              <textarea
+                rows="6"
+                cols="40"
+                value={props.description}
+                onChange={props.handleDescription}
+              >
                 Leave your message here about enquiry
               </textarea>
             </label>

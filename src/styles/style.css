@@ -1,9 +1,13 @@
 html {
   font-family: "Lato", sans-serif;
+  /* background: cornflowerblue;    */
 }
 body {
   max-width: 600px;
   margin-left: 24rem;
+  /* background: coral; */
+  /* background: cornflowerblue; */
+  background: whitesmoke;
 }
 .add-user {
   width: 20px;
@@ -58,7 +62,6 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   margin: 0;
-  /* margin-left: 30rem; */
 }
 .prev-btn {
   border: 1px solid black;
@@ -67,17 +70,13 @@ body {
   color: white;
   background-color: #0672e1;
   border-radius: 2px;
-  /* margin-left: 30rem; */
   text-transform: uppercase;
-  /* margin-top: 80px; */
   cursor: pointer;
 }
 .footer1 {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
-  height: 30px;
 }
 /* !!!!!!!!!!!!!-------------personal-----info---------css---------!!!!!!!!!!!!!!!! */
 .country {
@@ -98,11 +97,19 @@ body {
   font-size: 14px;
   background: transparent;
   border: 1px solid transparent;
+  border-radius: 3px;
+}
+.male-btn:hover {
+  background: rgb(133, 133, 133);
 }
 .female-btn {
   padding: 5px 18px;
   background: transparent;
   border: 1px solid transparent;
+  border-radius: 3px;
+}
+.female-btn:hover {
+  background: rgb(133, 133, 133);
 }
 .description {
   margin-left: 1px;
