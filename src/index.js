@@ -6,6 +6,7 @@ import { render } from "react-dom";
 // import "./styles/normalize.css";
 import AccountDetails from "./Components/Account";
 import PersonalInfo from "./Components/Personalinfo";
+import PaymentInfo from "./Components/Payment";
 import "./styles/style.css";
 
 class Index extends React.Component {
@@ -52,7 +53,10 @@ class Index extends React.Component {
         );
         break;
       case "personal_information":
-        return <PersonalInfo handlePage={this.handlePage} />;
+        return <PersonalInfo page={this.handlePage} />;
+        break;
+      case "payment-details":
+        return <PaymentInfo page={this.handlePage} />;
         break;
 
       default:

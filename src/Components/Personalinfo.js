@@ -53,13 +53,43 @@ export default function personalInfo(props) {
                 <option value="UK">UK</option>
               </select>
             </div>
+            <br />
+            <span>
+              Gender:
+              <button className="gender-btn">
+                <img
+                  src="images/man.png"
+                  alt="man-icon"
+                  className="man-icon"
+                ></img>{" "}
+                Male
+              </button>
+              <button className="gender-btn">
+                <img
+                  src="images/woman.png"
+                  alt="man-icon"
+                  className="man-icon"
+                ></img>{" "}
+                Female
+              </button>
+            </span>
+            <br />
+            <span>
+              About You:
+              <textarea rows="4" cols="40">
+                Leave your message here about enquiry
+              </textarea>
+            </span>
           </form>
         </div>
         <hr className="dotted-line" />
         <footer>
+          <span onClick={() => props.page("account-information")}>
+            previous
+          </span>
           <button
             className="next-btn"
-            onClick={() => props.handlepage("payment-details")}
+            onClick={() => props.page("payment-details")}
           >
             Next Step
           </button>
