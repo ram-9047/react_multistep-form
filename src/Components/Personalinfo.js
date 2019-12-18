@@ -41,9 +41,9 @@ export default function personalInfo(props) {
               />
             </label>
             <br />
-            <div>
+            <div className="country">
               <span>Country</span>
-              <select>
+              <select className="input-box">
                 <option selected value="Select Country">
                   Select Country
                 </option>
@@ -54,39 +54,44 @@ export default function personalInfo(props) {
               </select>
             </div>
             <br />
-            <span>
-              Gender:
-              <button className="gender-btn">
-                <img
-                  src="images/man.png"
-                  alt="man-icon"
-                  className="man-icon"
-                ></img>{" "}
-                Male
-              </button>
-              <button className="gender-btn">
-                <img
-                  src="images/woman.png"
-                  alt="man-icon"
-                  className="man-icon"
-                ></img>{" "}
-                Female
-              </button>
+            <span className="flex gender">
+              <p>Gender:</p>
+              <th className="btn">
+                <button className="male-btn">
+                  <img
+                    src="images/man.png"
+                    alt="man-icon"
+                    className="man-icon"
+                  ></img>{" "}
+                  Male
+                </button>
+                <button className="female-btn">
+                  <img
+                    src="images/woman.png"
+                    alt="man-icon"
+                    className="man-icon"
+                  ></img>{" "}
+                  Female
+                </button>
+              </th>
             </span>
             <br />
-            <span>
+            <label className="flex description">
               About You:
-              <textarea rows="4" cols="40">
+              <textarea rows="6" cols="40">
                 Leave your message here about enquiry
               </textarea>
-            </span>
+            </label>
           </form>
         </div>
         <hr className="dotted-line" />
-        <footer>
-          <span onClick={() => props.page("account-information")}>
+        <footer className="footer1">
+          <button
+            onClick={() => props.page("account-information")}
+            className="prev-btn"
+          >
             previous
-          </span>
+          </button>
           <button
             className="next-btn"
             onClick={() => props.page("payment-details")}

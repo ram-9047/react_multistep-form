@@ -43,7 +43,12 @@ export default function payment(props) {
       </div>
       <hr className="dotted-line" />
       <footer>
-        <span onClick={() => props.page("personal_information")}>previous</span>
+        <span
+          onClick={() => props.page("personal_information")}
+          className="prev-btn"
+        >
+          previous
+        </span>
         {/* <button
           className="next-btn"
           //   onClick={() => props.handlePage("payment-details")}

@@ -35,8 +35,8 @@ export default function AccountDetails(props) {
               Username:
               <input
                 type="text"
-                value={props.nameValue.name}
-                onChange={props.handleNameChange.handleNameChange}
+                value={props.nameValue}
+                onChange={props.nameChange}
                 className="input-box"
               />
             </label>
@@ -44,9 +44,10 @@ export default function AccountDetails(props) {
             <label className="email-box">
               Email:
               <input
-                type="text"
-                // value={this.state.email}
-                // onChange={this.handleEmailChange}
+                type="email"
+                value={props.emailValue}
+                onChange={props.emailChange}
+                pattern=".+@globex.com"
                 className="input-box"
               />
             </label>
@@ -54,9 +55,9 @@ export default function AccountDetails(props) {
             <label className="password-box">
               Password:
               <input
-                type="text"
-                // value={this.state.password}
-                // onChange={this.handlePasswordChange}
+                type="password"
+                value={props.passwordValue}
+                onChange={props.passwordChange}
                 className="input-box"
               />
             </label>

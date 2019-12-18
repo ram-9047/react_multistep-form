@@ -23,12 +23,13 @@ class Index extends React.Component {
     this.setState({
       name: event.target.value
     });
-    console.log(event);
+    console.log(event.target.value);
   };
   handleEmailChange = event => {
     this.setState({
       email: event.target.value
     });
+    console.log(event.target.value);
   };
   handlePasswordChange = event => {
     this.setState({
@@ -48,7 +49,11 @@ class Index extends React.Component {
           <AccountDetails
             handlePage={this.handlePage}
             nameValue={this.state.name}
-            handleNameChange={this.handleNameChange}
+            nameChange={this.handleNameChange}
+            emailValue={this.state.email}
+            emailChange={this.handleEmailChange}
+            passwordValue={this.state.password}
+            passwordChange={this.handlePasswordChange}
           />
         );
         break;
