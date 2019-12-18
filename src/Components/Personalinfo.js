@@ -49,11 +49,10 @@ export default function personalInfo(props) {
             <br />
             <div className="country">
               <span>Country</span>
-              <select className="input-box">
+              <select className="input-box" onClick={props.handleCountry}>
                 <option
                   selected
-                  value="Select Country"
-                  onClick={props.handleCountry}
+                  // value="Select Country"
                 >
                   Select Country
                 </option>
@@ -66,10 +65,11 @@ export default function personalInfo(props) {
             <br />
             <span className="flex gender">
               <p>Gender:</p>
-              <th className="btn">
-                <button
+              {/* <th className="btn">
+                <input
+                  type="radio"
                   className="male-btn"
-                  value="male"
+                  name="male"
                   onClick={props.handleGender}
                 >
                   <img
@@ -78,20 +78,39 @@ export default function personalInfo(props) {
                     className="man-icon"
                   ></img>{" "}
                   Male
-                </button>
-                <button
+                </input>
+                <input
+                  type="radio"
                   className="female-btn"
-                  value="female"
+                  name="female"
                   onClick={props.handleGender}
                 >
                   <img
                     src="images/woman.png"
                     alt="man-icon"
                     className="man-icon"
-                  ></img>{" "}
+                  ></img>
                   Female
-                </button>
-              </th>
+                </input>
+              </th> */}
+              <span className="btn">
+                {" "}
+                Male
+                <input
+                  type="radio"
+                  value="male"
+                  onClick={props.handleGender}
+                ></input>
+              </span>
+              <br></br>
+              <span className="btn">
+                Female
+                <input
+                  type="radio"
+                  value="female"
+                  onClick={props.handleGender}
+                ></input>
+              </span>
             </span>
             <br />
             <label className="flex description">

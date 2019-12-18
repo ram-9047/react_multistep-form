@@ -5,9 +5,10 @@ html {
 body {
   max-width: 600px;
   margin-left: 24rem;
+  background-image: url("https://images.wallpaperscraft.com/image/glass_surface_oval_transparent_form_19525_1920x1200.jpg");
   /* background: coral; */
   /* background: cornflowerblue; */
-  background: whitesmoke;
+  /* background: whitesmoke; */
 }
 .add-user {
   width: 20px;

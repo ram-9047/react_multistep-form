@@ -85,7 +85,7 @@ class Index extends React.Component {
     });
   };
   alert = () => {
-    alert(this.state.fullName + "registered successfully");
+    alert(this.state.fullName + " registered successfully");
   };
   handlePage = page => {
     this.setState({
