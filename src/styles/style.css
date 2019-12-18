@@ -114,3 +114,17 @@ body {
 .description {
   margin-left: 1px;
 }
+/* !!!!!!!!!!!!!--------------payment-------page----------!!!!!!!!!!!!!!!!! */
+.check-mark-icon {
+  height: 10px;
+  width: 10px;
+}
+.payment-box {
+  margin-left: 5px;
+}
+.card-number-box {
+  margin-left: 30px;
+}
+.expiry-box {
+  margin-left: 40px;
+}

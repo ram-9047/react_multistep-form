@@ -9,16 +9,28 @@ export default function payment(props) {
           alt="add_user"
           className="add-user"
         ></img>
-        <h3>Sign-up to create account</h3>
+        <h3>Create account for full-access</h3>
       </div>
       <hr className="dotted-line" />
       <div className="flex">
         <div className="flex details">
-          <span className="details-list">1</span>
+          <span className="details-list">
+            <img
+              src="images/check-mark.png"
+              alt="check-mark icon"
+              className="check-mark-icon"
+            ></img>
+          </span>
           <h4>Account Information</h4>
         </div>
         <div className="flex details">
-          <span className="details-list">2</span>
+          <span className="details-list">
+            <img
+              src="images/check-mark.png"
+              alt="check-mark icon"
+              className="check-mark-icon"
+            ></img>
+          </span>
           <h4>Personal Information</h4>
         </div>
         <div className="flex details">
@@ -30,7 +42,7 @@ export default function payment(props) {
       <div>
         <form className="form">
           <label className="name-box">
-            Name on the Card
+            Name on the Card:
             <input
               type="text"
               value={props.cardName}
@@ -39,8 +51,8 @@ export default function payment(props) {
             />
           </label>
           <br />
-          <label>
-            Payment Method
+          <label className="payment-box">
+            Payment Method:
             <input
               type="text"
               value={props.payment}
@@ -49,8 +61,8 @@ export default function payment(props) {
             />
           </label>
           <br />
-          <label>
-            Card Number
+          <label className="card-number-box">
+            Card Number:
             <input
               type="number"
               value={props.cardNumber}
@@ -59,8 +71,8 @@ export default function payment(props) {
             />
           </label>
           <br />
-          <label>
-            Expiry Date
+          <label className="expiry-box">
+            Expiry Date:
             <input
               type="date"
               value={props.expiryDate}

@@ -16,7 +16,13 @@ export default function personalInfo(props) {
         <hr className="dotted-line" />
         <div className="flex">
           <div className="flex details">
-            <span className="details-list">1</span>
+            <span className="details-list">
+              <img
+                src="images/check-mark.png"
+                alt="check-mark icon"
+                className="check-mark-icon"
+              ></img>
+            </span>
             <h4>Account Information</h4>
           </div>
           <div className="flex details">
